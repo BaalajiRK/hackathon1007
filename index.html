@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Support Agent</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="widget">
+    <!-- Header -->
+    <div class="header">
+      <div class="header-left">
+        <div class="bot-icon">🤖</div>
+        <div>
+          <p class="title">Support Agent</p>
+          <p class="subtitle">agentic-rag · self-correcting</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Messages -->
+    <div class="messages" id="messages"></div>
+
+    <!-- Input -->
+    <form class="input-bar" id="chatForm">
+      <input
+        type="text"
+        id="userInput"
+        placeholder="Describe your issue..."
+        autocomplete="off"
+      />
+      <button type="submit" id="sendBtn">
+        <span id="sendIcon">➤</span>
+        <span id="loadingIcon" class="hidden">⏳</span>
+      </button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
